@@ -35,7 +35,7 @@ public class LayananDesaFormActivity extends AppCompatActivity {
 
     EditText edtKateg, edtNik, edtTgl, edtKet;
     Button btnSimpn;
-    String idkategori;
+    String idkategori, namalayanan, ketlayanan;
     Calendar calendar;
     DatePickerDialog.OnDateSetListener date;
     SessionManager sessionManager;
@@ -53,7 +53,10 @@ public class LayananDesaFormActivity extends AppCompatActivity {
         btnSimpn = (Button) findViewById(R.id.btnsave);
 
         Intent got = getIntent();
-        idkategori = got.getStringExtra("kategori");
+        idkategori = got.getStringExtra("id_kategori");
+        namalayanan = got.getStringExtra("nama_layanan");
+        ketlayanan = got.getStringExtra("deskripsi");
+
         edtKateg.setText(idkategori);
         sessionManager = new SessionManager(this);
         HashMap<String, String> userr = sessionManager.getUserDetail();

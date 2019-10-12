@@ -46,7 +46,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
     private static final String TAG = MapFragment.class.getSimpleName();
     MarkerOptions markerOptions = new MarkerOptions();
     CameraPosition cameraPosition;
-    LatLng center, latlng;
+    LatLng cente, latlng;
     double lat, lng;
     String dess;
     private GoogleMap mMap;
@@ -97,8 +97,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         mMap = googleMap;
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
-        center = new LatLng(-6.886427, 107.613604);
-        cameraPosition = new CameraPosition.Builder().target(center).zoom(15).build();
+        cente = new LatLng(-6.752716, 108.052723);
+        cameraPosition = new CameraPosition.Builder().target(cente).zoom(15).build();
         googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
         // latlng = new LatLng(-6.8952, 107.62668);
         //  addMarker(latlng, "gagak");
@@ -154,7 +154,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                     TextView tvlat = v.findViewById(R.id.tv_lat);
                     TextView tvlng = v.findViewById(R.id.tv_lng);
                     TextView tvsnippet = v.findViewById(R.id.tv_snippet);
-                    TextView tvket = v.findViewById(R.id.tv_ket);
 
                     LatLng ll = marker.getPosition();
                     tvlocality.setText(marker.getTitle());
@@ -198,13 +197,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                                 String IdToko = object.getString("id_mitigasi");
                                 String Nama = object.getString("nama_lokasi");
                                 String la = object.getString("lat");
-                                String ln = object.getString("lon");
+                                String ln = object.getString("lng");
                                 String Keterangan = object.getString("keterangan");
 
                                 lat = Double.parseDouble(object.getString("lat"));
-                                lng = Double.parseDouble(object.getString("lon"));
+                                lng = Double.parseDouble(object.getString("lng"));
 
-                                latlng = new LatLng(Double.parseDouble(object.getString("lat")), Double.parseDouble(object.getString("lon")));
+                                latlng = new LatLng(Double.parseDouble(object.getString("lat")), Double.parseDouble(object.getString("lng")));
                                 addMarker(latlng, Nama);
 
 

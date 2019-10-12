@@ -48,7 +48,7 @@ public class PanicFragment extends Fragment {
         btnPanic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendMultiplePush();
+             //   sendMultiplePush();
             }
         });
 
@@ -56,7 +56,7 @@ public class PanicFragment extends Fragment {
         return panic;
     }
 
-    public void sendMultiplePush() {
+  /*  public void sendMultiplePush() {
 
         final String title = "Pemberitahuan Darurat";
         final String message = "Butuh Pertolongan";
@@ -95,5 +95,5 @@ public class PanicFragment extends Fragment {
         MyVolley.getInstance(getContext()).addToRequestQueue(stringRequest);
 
     }
-
+*/
 }

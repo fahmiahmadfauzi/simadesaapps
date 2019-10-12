@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".penduduk.LayananDesanActivity">
+    tools:context=".penduduk.LayananDesanActivity"
+    android:background="#fff">
 
     <include
         layout="@layout/toolbar2"
@@ -43,101 +45,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="2dp">
 
-        <TableLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTempp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TableRow android:id="@+id/tsuratktp">
+        </android.support.v7.widget.RecyclerView>
 
-                <LinearLayout android:id="@+id/pengaturanakun">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_action_create" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Surat Pembuatan KTP"
-                            android:textColor="#000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Pembuatan KTP Baru, Pembaruan KTP"
-                            android:textColor="#A89A9A"
-                            android:textSize="12dp" />
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </TableRow>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:background="@android:color/darker_gray" />
-
-            <TableRow android:id="@+id/tsuratlaporan">
-
-                <LinearLayout android:id="@+id/pengaturanpassword">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_action_create" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Surat Laporan"
-                            android:textColor="#000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Pembuatan Laporan"
-                            android:textColor="#A89A9A"
-                            android:textSize="12dp" />
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-            </TableRow>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:background="@android:color/darker_gray" />
-        </TableLayout>
-
-
-    </LinearLayout>
-
-
+</LinearLayout>
 </LinearLayout>

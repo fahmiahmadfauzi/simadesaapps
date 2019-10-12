@@ -29,7 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
-    private static final String URL_REGISTER_DEVICE = "http://192.168.0.40/simadesa/apps/FcmExample/RegisterDevice.php";
+    private static final String URL_REGISTER_DEVICE = "http://app.desa-babakanasem.id/FcmExample/RegisterDevice.php";
     TextView linkregister;
     EditText edtUsername, edtPassword;
     Button btnLogin;

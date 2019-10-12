@@ -3,7 +3,9 @@ package com.fahmi.simadesav1.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,8 +45,24 @@ public class AdapterDataInfoDesa extends RecyclerView.Adapter<AdapterDataInfoDes
     public void onBindViewHolder(AdapterDataInfoDesa.HolderData holder, int position) {
         ModelDataInfoDesa mlist = mListItems.get(position);
 
+        if (mlist.getDeskripsi().length() >= 0){
+            if (mlist.getDeskripsi().length()>100){
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    holder.tv_keterangan.setText(Html.fromHtml(mlist.getDeskripsi().substring(0,50)+"...", Html.FROM_HTML_MODE_COMPACT));
+                } else {
+                    holder.tv_keterangan.setText(Html.fromHtml(mlist.getDeskripsi()));
+                }
+            }else{
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    holder.tv_keterangan.setText(Html.fromHtml(mlist.getDeskripsi(), Html.FROM_HTML_MODE_COMPACT));
+                } else {
+                    holder.tv_keterangan.setText(Html.fromHtml(mlist.getDeskripsi()));
+                }
+            }
+        }
+
         holder.tv_title.setText(mlist.getJudul());
-        holder.tv_keterangan.setText(mlist.getDeskripsi());
+       // holder.tv_keterangan.setText(mlist.getDeskripsi());
         //loading image
         Glide.with(context).load(mlist.getFoto()).thumbnail(0.5f).transition(new DrawableTransitionOptions().crossFade()).into(holder.thubnail);
         // new GetImageFromURL(holder.thubnail).execute(mlist.getFoto());
@@ -71,12 +89,15 @@ public class AdapterDataInfoDesa extends RecyclerView.Adapter<AdapterDataInfoDes
             tv_keterangan = v.findViewById(R.id.tv_description);
 
 
+
+
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
                     if (context.getClass().equals(InfoDesaActivity.class)) {
                         Intent detail = new Intent(context, InfoDesaDetailActivity.class);
+
 
                         // detail.putExtra("klik",1);
                         detail.putExtra("id_info", md.getId_info());

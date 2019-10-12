@@ -22,6 +22,7 @@ import com.fahmi.simadesav1.R;
 import com.fahmi.simadesav1.adapter.AdapterDataUsulan;
 import com.fahmi.simadesav1.api.ServerApi;
 import com.fahmi.simadesav1.model.ModelDataUsulan;
+import com.fahmi.simadesav1.session.SessionManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -41,6 +42,7 @@ public class UsulanWargaRiwayatFragment extends Fragment {
     RecyclerView.Adapter mAdapter;
     List<ModelDataUsulan> modelDataList;
     RecyclerView.LayoutManager manager;
+    SessionManager sessionManager;
 
 
     public UsulanWargaRiwayatFragment() {
@@ -56,6 +58,7 @@ public class UsulanWargaRiwayatFragment extends Fragment {
         mRecyclerView = (RecyclerView) riwayat_usulan.findViewById(R.id.recyclerTempp);
         modelDataList = new ArrayList<>();
         manager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+        sessionManager = new SessionManager(getContext());
         mRecyclerView.setLayoutManager(manager);
         mAdapter = new AdapterDataUsulan(getActivity(), modelDataList);
         mRecyclerView.setAdapter(mAdapter);

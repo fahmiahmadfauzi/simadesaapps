@@ -387,8 +387,7 @@
         android:id="@+id/main_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottomnav"
-        android:layout_below="@id/tlbr">
+        android:layout_above="@+id/bottomnav">
 
     </FrameLayout>
 

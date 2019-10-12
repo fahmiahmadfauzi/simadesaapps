@@ -1,7 +1,7 @@
 package com.fahmi.simadesav1.api;
 
 public class ServerApi {
-    static String ip = "app.desa-babakanasem.id/";
+    static String ip ="app.desa-babakanasem.id/";
 
    /* public static final String URL_LOGIN = "http://" + ip + "/simadesa/apps/login.php";
     public static final String URL_REGISTER = "http://" + ip + "/simadesa/apps/register.php";
@@ -53,8 +53,9 @@ public class ServerApi {
     public static final String URL_REGIS_ALAT = "http://" + ip + "validasi_alat_tambah.php";
     public static final String URL_UPDATESTAT_ALAT = "http://" + ip + "validasi_alat_updatestat.php";
     public static final String URL_GET_MITIGASI = "http://" + ip + "get_mitigasi.php";
+    public static final String URL_GET_LAYANAN = "http://" + ip + "get_kategori_layanan.php";
 
 
-    public static final String URL_SEND_MULTIPLE_PUSH = "http://" + ip + "FcmExample/sendMultiplePush.php";
+    //public static final String URL_SEND_MULTIPLE_PUSH = "http://" + ip + "FcmExample/sendMultiplePush.php";
 
 }
