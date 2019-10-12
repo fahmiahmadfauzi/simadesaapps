@@ -86,9 +86,7 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.action_kontak:
                         fragment = new KontakFragment();
                         break;
-                    case R.id.action_panic:
-                        fragment = new PanicFragment();
-                        break;
+                    
                     case R.id.action_profile:
                         fragment = new ProfileFragment();
                         break;

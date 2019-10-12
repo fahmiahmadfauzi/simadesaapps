@@ -43,9 +43,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.M){
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        }
 
         setContentView(R.layout.activity_login);
 
@@ -53,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         linkregister = (TextView) findViewById(R.id.register);
         edtUsername = (EditText) findViewById(R.id.edtusername);
         edtPassword = (EditText) findViewById(R.id.edtpassword);
-        btnLogin = (Button) findViewById(R.id.btnlogin);
+        btnLogin = (Button) findViewById(R.id.btnLogin);
 
 
         Loading = findViewById(R.id.loading);

@@ -16,10 +16,10 @@ public class LaporActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lapor);
 
-        view = (WebView) this.findViewById(R.id.webView);
+       /* view = (WebView) this.findViewById(R.id.webView);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
-        view.loadUrl("https://www.lapor.go.id/");
+        view.loadUrl("https://www.lapor.go.id/");*/
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

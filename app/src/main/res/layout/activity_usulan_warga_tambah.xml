@@ -52,7 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:background="@drawable/edt_garis">
+            android:background="@drawable/edt_garis"
+            android:visibility="gone">
 
             <EditText
                 android:id="@+id/edtnik"

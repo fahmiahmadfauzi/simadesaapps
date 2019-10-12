@@ -220,7 +220,7 @@
             android:textColor="#FFFFFF"
             android:text="Daftar"
             android:textAllCaps="false"
-            android:background="@drawable/rounded_button"
+            android:background="@drawable/btn_garis_putih"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/loginViewsMargin"/>
 
