@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fahmi.simadesav1">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".penduduk.HomeActivity"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".penduduk.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".penduduk.RegisAlatActivity"
+            android:parentActivityName=".penduduk.HomeActivity" />
+        <activity
+            android:name=".umum.CariHasilActivity"
+            android:parentActivityName=".umum.HomeUmumActivity" />
+        <activity
+            android:name=".umum.CariActivity"
+            android:parentActivityName=".umum.HomeUmumActivity" />
+        <activity android:name=".penduduk.LayananDesaFormActivity" />
+        <activity
+            android:name=".penduduk.LayananDesanActivity"
+            android:parentActivityName=".penduduk.HomeActivity" />
+        <activity
+            android:name=".penduduk.MitraDesaActivity"
+            android:parentActivityName=".penduduk.HomeActivity" />
+        <activity android:name=".penduduk.LaporActivity" />
+        <activity
+            android:name=".penduduk.UMKMWargaTambahActivity"
+            android:parentActivityName=".penduduk.UMKMWargaActivity" />
+        <activity
+            android:name=".penduduk.UMKMWargaActivity"
+            android:parentActivityName=".penduduk.HomeActivity" />
+        <activity
+            android:name=".penduduk.PotensiDesaActivity"
+            android:parentActivityName=".umum.HomeUmumActivity" />
+        <activity
+            android:name=".penduduk.UsulanWargaTambahActivity"
+            android:parentActivityName=".penduduk.UsulanWargaActivity" />
+        <activity
+            android:name=".penduduk.UsulanWargaActivity"
+            android:parentActivityName=".penduduk.HomeActivity" />
+        <activity android:name=".penduduk.InfoDesaDetailActivity" />
+        <activity
+            android:name=".penduduk.InfoDesaActivity"
+            android:parentActivityName=".penduduk.HomeActivity" />
+        <activity android:name=".DetailInfoDesaActivity" />
+        <activity android:name=".penduduk.RegisterActivity" />
+        <activity android:name=".penduduk.LoginActivity" />
+        <activity
+            android:name=".umum.HomeUmumActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".penduduk.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".penduduk.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

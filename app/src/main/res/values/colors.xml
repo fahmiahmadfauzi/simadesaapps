@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#B6B3B3</color>
+    <color name="colorCheck">#FFFFFF</color>
+    <color name="colorUncheck">#F8DFDF</color>
+
+
+    <!--<color name="windowBackground">#FFF</color>
+    <color name="navigationBarColor">#fff</color>-->
+
+    <!--<color name="textColorPrimary">#FFF</color>-->
+    <color name="colorW">#FFF</color>
+
+    <color name="colorWhite">#FFF</color>
+
+    <color name="colorTransparentWhite">#cccccc</color>
+</resources>

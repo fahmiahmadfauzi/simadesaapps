@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="Home"
+        android:titleCondensed="@string/Home" />
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_action_image"
+        android:title="Map"
+        android:titleCondensed="@string/Trend"
+
+        />
+    <item
+        android:id="@+id/action_kontak"
+        android:icon="@drawable/ic_action_people"
+        android:title="Kontak"
+        android:titleCondensed="@string/Search" />
+    <item
+        android:id="@+id/action_panic"
+        android:icon="@drawable/ic_action_notif"
+        android:title="Panik"
+        android:titleCondensed="@string/Search" />
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_action_person"
+        android:title="Profile"
+        android:titleCondensed="@string/Profile" />
+
+
+</menu>

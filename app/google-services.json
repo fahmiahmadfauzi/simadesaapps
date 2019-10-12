@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "64474543615",
+    "firebase_url": "https://simadesav1.firebaseio.com",
+    "project_id": "simadesav1",
+    "storage_bucket": "simadesav1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64474543615:android:10723bc26dc195714623ca",
+        "android_client_info": {
+          "package_name": "com.fahmi.simadesav1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64474543615-qnndgirjumcrdk8a8otittshqv58aeit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fahmi.simadesav1",
+            "certificate_hash": "e42ae1e7d09685a9875bd8777a7c4f36405d3c77"
+          }
+        },
+        {
+          "client_id": "64474543615-ug3ddns22mr5pk2at43dohiebo9lea8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-Ol2mMwSO1Wwz1Kk-AoSADx_lzx7iNLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64474543615-ug3ddns22mr5pk2at43dohiebo9lea8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

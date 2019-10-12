@@ -1,0 +1,10 @@
+<android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomnav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimary"
+    android:elevation="2dp"
+    app:itemIconTint="@drawable/state_list"
+    app:itemTextColor="@drawable/state_list"></android.support.design.widget.BottomNavigationView>

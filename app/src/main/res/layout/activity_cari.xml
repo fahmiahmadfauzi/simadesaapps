@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/GreenTheme"
+    tools:context=".umum.CariActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarcari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/GreenTheme">
+
+        <EditText
+            android:id="@+id/edtcari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cari Perekonomian"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:theme="@style/GreenTheme" />
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
