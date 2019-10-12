@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/loginViewsMargin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputNIK"
+            style="@style/parent"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:id="@+id/edtnik"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="NIK"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputNama"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtnama"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Nama Lengkap"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputAlamat"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtalamat"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Alamat"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tmpt_lahir_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edttmptlahir"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Tempat Lahir"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tgl_lahir_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edttgllahir"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Masukan Tanggal Lahir"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/agama_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtagama"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Agama"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin :" />
+
+        <RadioGroup
+            android:id="@+id/rgJK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_lakilaki" />
+
+            <RadioButton
+                android:id="@+id/rbp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_perempuan" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Perkawinan:" />
+
+        <RadioGroup
+            android:id="@+id/rgStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_kawin" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_blmkawin" />
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pekerjaan_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtpekerjaan"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Pekerjaan"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/kontak_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtkontak"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Kontak"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtusername"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Username"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pass_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtpass1"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Password"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pass2_text_input_layout"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/edtpass2"
+                style="@style/modifiedEditText"
+                android:hint="Masukan Password"
+                android:backgroundTint="@color/colorPrimary"
+                android:maxLines="1"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnsimipan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

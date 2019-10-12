@@ -5,6 +5,9 @@
     <string name="radio_kawin">Kawin</string>
     <string name="radio_blmkawin">Belum kawin</string>
 
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
 
     <string name="Home"></string>
     <string name="Trend"></string>
