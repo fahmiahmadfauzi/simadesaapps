@@ -7,20 +7,13 @@
         android:titleCondensed="@string/Home" />
     <item
         android:id="@+id/action_map"
-        android:icon="@drawable/ic_action_image"
-        android:title="Map"
-        android:titleCondensed="@string/Trend"
-
-        />
+        android:icon="@drawable/ic_directions_run_black_24dp"
+        android:title="Mitigasi"
+        android:titleCondensed="@string/Trend" />
     <item
         android:id="@+id/action_kontak"
         android:icon="@drawable/ic_action_people"
         android:title="Kontak"
-        android:titleCondensed="@string/Search" />
-    <item
-        android:id="@+id/action_panic"
-        android:icon="@drawable/ic_action_notif"
-        android:title="Panik"
         android:titleCondensed="@string/Search" />
     <item
         android:id="@+id/action_profile"

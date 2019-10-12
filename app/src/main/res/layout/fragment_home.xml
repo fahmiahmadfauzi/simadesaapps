@@ -22,7 +22,7 @@
             android:layout_height="150dp"
             android:layout_below="@id/tlbr"
             android:scaleType="centerCrop"
-            android:src="@drawable/homes" />
+            android:src="@drawable/ic_cover" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,7 +63,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -83,6 +86,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
                             android:text="Info Desa"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -99,7 +103,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -121,6 +128,7 @@
                             android:layout_marginTop="3dp"
                             android:text="Usulan Warga"
                             android:textAlignment="center"
+                            android:fontFamily="@font/rubik_regular"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
 
@@ -136,7 +144,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -157,6 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
                             android:text="Layanan Desa"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -174,7 +186,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -194,7 +209,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
-                            android:text="Perekonomian"
+                            android:text="UMKM Desa"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -211,7 +227,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -232,6 +251,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
                             android:text="Potensi Desa"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -248,7 +268,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -269,6 +292,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
                             android:text="Lapor"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -285,7 +309,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -305,7 +332,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
-                            android:text="Mitra Desa"
+                            android:text="Investor Desa"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -322,7 +350,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -336,13 +367,14 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/agenda" />
+                            android:src="@drawable/ic_powerbutton" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
-                            android:text="Regis Alat"
+                            android:text="Panic Button"
+                            android:fontFamily="@font/rubik_regular"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
                             android:textSize="12sp" />
@@ -359,7 +391,10 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    app:cardCornerRadius="8dp">
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="7dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -380,6 +415,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
+                            android:fontFamily="@font/rubik_regular"
                             android:text="Logout"
                             android:textAlignment="center"
                             android:textColor="#8D8686"
