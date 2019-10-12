@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".penduduk.HomeActivity">
+
+
+    <!-- <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:scaleType="centerCrop"
+         android:id="@+id/cover"
+         android:src="@drawable/homes"
+         android:layout_below="@id/tlbr"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:layout_below="@id/cover"
+         android:layout_above="@id/bottomnav"
+         android:orientation="vertical">
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/idakun"
+             android:visibility="gone"/>
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/nik"
+             android:visibility="gone"/>
+
+         <GridLayout
+             android:id="@+id/mainGrid"
+             android:rowCount="3"
+             android:columnCount="3"
+             android:alignmentMode="alignMargins"
+             android:columnOrderPreserved="false"
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:padding="5dp">
+
+
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/info_desa"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Info Desa"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/usulan"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Usulan Warga"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:layout_width="wrap_content"
+                     android:gravity="center"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/layanan"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Layanan Desa"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+
+
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:layout_width="wrap_content"
+                     android:gravity="center"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/umkm"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Perekonomian"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/komoditi"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Potensi Desa"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/kontak"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Kontak Desa"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/mitra"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Mitra Desa"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/agenda"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Regis Alat"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:layout_columnWeight="1"
+                 android:layout_marginBottom="1dp"
+                 android:layout_rowWeight="1"
+                 android:layout_marginLeft="1dp"
+                 android:layout_marginRight="1dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_gravity="center_horizontal|center_vertical"
+                     android:layout_margin="16dp"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:src="@drawable/ic_phone_android_black_24dp"
+                         android:layout_gravity="center_horizontal"
+                         android:background="@drawable/lingkaranputih"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp" />
+
+                     <TextView
+                         android:textAlignment="center"
+                         android:text="Logout"
+                         android:textColor="#8D8686"
+                         android:textSize="12sp"
+                         android:layout_marginTop="3dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+
+
+
+         </GridLayout>
+
+
+
+     </LinearLayout>-->
+
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav"
+        android:layout_below="@id/tlbr">
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        app:itemIconTint="@drawable/state_list"
+        app:itemTextColor="@drawable/state_list"></android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
